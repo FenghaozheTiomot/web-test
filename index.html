@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change on Agriculture</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar_logo">CCoA</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="/" class="navbar_link">
+                    Home </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/study.html" class="navbar_link">
+                    Dataset </a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="/study.html" class="button">
+                    Join us </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Main-->
+    <!-- Main -->
+    <div class="main">
+        <div class="main_container">
+            <!-- Title Section -->
+            <div class="main_title">
+                <div class="title_box">
+                    <h1>How does Climate Change affect Agriculture</h1>
+                </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="content">
+                <h2>Background</h2>
+                <p>As global temperatures rise and precipitation patterns change, agricultural practices are forced to adapt. Understanding how climate and adaptation strategies impact crop yields and economic outcomes is crucial for mitigating the effects of climate change on food production. By analyzing how different regions are responding to climate variability, we can identify successful strategies that could be applied globally to ensure food security.</p>
+                <h2>The data source</h2>
+                <p>This dataset includes agricultural data from 1990 to 2024, covering a wide range of crops, countries, and regions. It tracks factors like temperature, precipitation, CO2 emissions, crop yields, and economic impacts. Size of Data: The dataset contains 10,000 records across 10 countries, with 10 attributes per entry, including crop types, climate data, and adaptation strategies.</p>
+                <h3>Attributes</h3>
+                <ul>
+                    <li>Year (1990 - 2024)</li>
+                    <li>Country</li>
+                    <li>Crop Type (barley, coffee, corn, cotton, fruits, rice, soybeans, sugarcane, vegetables, wheat)</li>
+                    <li>Average Temperature (°C)</li>
+                    <li>Total Precipitation (mm)</li>
+                    <li>CO2 Emissions (metric tons)</li>
+                    <li>Crop Yield (metric tons per hectare)</li>
+                    <li>Extreme Weather Events (0 - 10)</li>
+                    <li>Irrigation Access (0 - 100)</li>
+                    <li>Pesticide Use (kilogram per hectare)</li>
+                    <li>Fertilizer Use (kilogram per hectare)</li>
+                    <li>Soil Health Index (0 - 100)</li>
+                    <li>Adaption Strategies (crop rotation, drought-resistant crops, organic farming, water management, no adaptation)</li>
+                    <li>Economic Impact (in million USD)</li>
+                </ul>
+            </div>
+            <div class="result_content">
+                <h3 style="text-align:center; margin-top:15px;">Soil Health Index Over Time</h3>
+                <img src="Soil Health Index Over Time.png" alt="Climate Impact" style="width:100%; max-width:500px; display:block; margin:auto;">
+                <h3 style="text-align:center; margin-top:15px;">Trends in CO2 Emissions, Temperature, and Precipitation Over Time</h3>
+                <img src="Trends in CO2 Emissions, Temperature, and Precipitation Over Time.png" alt="Climate Impact" style="width:100%; max-width:500px; display:block; margin:auto;">
+                <h2 style="text-align:center; margin-top:15px;">Click the button below to access the interactive plot</h2>
+            </div>
+            <div class="button-container">
+                <button onclick="window.location.href='Global Crop Yield and Extreme Weather Events.html';"> Global Crop Yield Over Time</button>
+                <button onclick="window.location.href='scatter_plot.html';">Temperature on Crop Yield</button>
+                <button onclick="window.location.href='Soil Health Index by Country and Year.html';">Heatmap of Soil Health by Country and Year</button>
+                <button onclick="window.location.href='Soil Health vs Crop Yield (Top vs. Low Soil Health Countries).html';">Soil Health vs Crop Yield</button>
+                <button onclick="window.location.href='page6.html';">Crop Yield Over Time</button>
+            </div>
+                
+        </div>
+    </div>
+    <script src ="app.js"></script>
+</body>
+</html>
